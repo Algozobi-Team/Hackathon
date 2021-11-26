@@ -1,36 +1,66 @@
-#importing libraries
+#  Import modules
 from PIL import Image
 import random
 
-#diffrent layers
-body = [
-    r'./body/b1.pgn',
-    r'./body/b2.pgn',
-    r'./body/b3.pgn',
-    r'./body/b4.pgn',
+# list of filepath to individual image layers
+img_layer_1 = [
+    r'./space/space1.png',
+    r'./space/space2.png',
+    r'./space/space3.png',
+    r'./space/space4.png',
 ]
-eyes = [
-    r'./eyes/e1.pgn',
-    r'./eyes/e2.pgn',
-    r'./eyes/e3.pgn',
-    r'./eyes/e4.pgn'
+img_layer_2 = [
+    r'./body/body1.png',
+    r'./body/body2.png',
+    r'./body/body3.png',
+    r'./body/body4.png',
 ]
-body = [
-    r'./mouth/m1.pgn',
-    r'./mouth/m2.pgn',
-    r'./mouth/m3.pgn',
-    r'./mouth/m4.pgn'
+img_layer_3 = [
+    r'./eyes/eyes1.png',
+    r'./eyes/eyes2.png',
+    r'./eyes/eyes3.png',
+    r'./eyes/eyes4.png'
+]
+img_layer_4 = [
+    r'./mouth/mouth1.png',
+    r'./mouth/mouth2.png',
+    r'./mouth/mouth3.png',
+    r'./mouth/mouth4.png'
 ]
 
-#merging layers 
-img1 = Image.open(r'/body/b1.pgn')
-img2 = Image.open(r'/eyes/e1.pgn')
 
-intermedia = Image.alpha_composite(img1, img2)
+colletion_size = 2
+nft_number = 0
+file_extension = '.png'
 
-img3 = Image.open(r'/mouth/m1.pgn')
+while nft_number < colletion_size:
+# randomize choice of all 4 layers
+    l1 = random.choice(img_layer_1)
+    l2 = random.choice(img_layer_2)
+    l3 = random.choice(img_layer_3)
+    l4 = random.choice(img_layer_4)
 
-final = Image.alpha_composite(intermedia, img3)
+# randomize choice of layers with weights
+    # body = random.choices(bodys, weights = (10, 10, 10, 70))[0]
+    # eye = random.choices(eyes, weights = (5, 35, 15, 45))[0]
+    # mouth = random.choices(mouths, weights = (20, 40, 10, 30))[0]
 
-#saving file
-final.save('final.png')
+# compile layer_1 and layer_2 and sotring it as variable "l1_l2"
+    layer_1 = Image.open(l1)
+    layer_2 = Image.open(l2)
+    l1_l2 = Image.alpha_composite(layer_1, layer_2)
+
+# compile "l1_l2" with layer_3 and storing it as "l1_l2_l3"
+    layer_3 = Image.open(l3)
+    l1_l2_l3 = Image.alpha_composite(l1_l2, layer_3)
+
+# compile "l1_l2_l3" with layer_4 and storing as final_nft
+    layer_4 = Image.open(l4)
+    final_nft = Image.alpha_composite(l1_l2_l3, layer_4)
+
+# exporting "final_nft" as a .png file
+    nft_number += 1
+    file_name = str(nft_number) + file_extension
+    final_nft.save(file_name)
+
+
