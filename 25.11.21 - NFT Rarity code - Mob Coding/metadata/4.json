@@ -1,0 +1,15 @@
+{
+    "name": 4,
+    "description": "Join the Bored Alien Space Club",
+    "image": "",
+    "attributes": [
+        {
+            "trait_type": "1_space",
+            "value": "space1"
+        },
+        {
+            "trait_type": "2_body",
+            "value": "body2"
+        }
+    ]
+}

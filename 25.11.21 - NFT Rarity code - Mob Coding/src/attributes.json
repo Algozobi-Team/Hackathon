@@ -1,0 +1,66 @@
+[
+    [
+        1,
+        {
+            "trait_type": "1_space",
+            "value": "space2"
+        },
+        {
+            "trait_type": "2_body",
+            "value": "body1"
+        },
+        {
+            "trait_type": "4_mouth",
+            "value": "mouth2"
+        }
+    ],
+    [
+        2,
+        {
+            "trait_type": "1_space",
+            "value": "space1"
+        },
+        {
+            "trait_type": "2_body",
+            "value": "body1"
+        },
+        {
+            "trait_type": "3_eyes",
+            "value": "eyes1"
+        },
+        {
+            "trait_type": "4_mouth",
+            "value": "mouth3"
+        }
+    ],
+    [
+        3,
+        {
+            "trait_type": "1_space",
+            "value": "space2"
+        },
+        {
+            "trait_type": "2_body",
+            "value": "body1"
+        },
+        {
+            "trait_type": "3_eyes",
+            "value": "eyes1"
+        },
+        {
+            "trait_type": "4_mouth",
+            "value": "mouth2"
+        }
+    ],
+    [
+        4,
+        {
+            "trait_type": "1_space",
+            "value": "space1"
+        },
+        {
+            "trait_type": "2_body",
+            "value": "body2"
+        }
+    ]
+]

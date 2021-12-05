@@ -1,0 +1,26 @@
+{
+    "1_space": [
+        "./img_layers/1_space/space2.png",
+        "./img_layers/1_space/space3.png",
+        "./img_layers/1_space/space1.png",
+        "./img_layers/1_space/space4.png"
+    ],
+    "2_body": [
+        "./img_layers/2_body/body4.png",
+        "./img_layers/2_body/body2.png",
+        "./img_layers/2_body/body3.png",
+        "./img_layers/2_body/body1.png"
+    ],
+    "3_eyes": [
+        "./img_layers/3_eyes/eyes1.png",
+        "./img_layers/3_eyes/eyes2.png",
+        "./img_layers/3_eyes/eyes3.png",
+        "./img_layers/3_eyes/eyes4.png"
+    ],
+    "4_mouth": [
+        "./img_layers/4_mouth/mouth4.png",
+        "./img_layers/4_mouth/mouth2.png",
+        "./img_layers/4_mouth/mouth3.png",
+        "./img_layers/4_mouth/mouth1.png"
+    ]
+}
